@@ -3,6 +3,8 @@
 #include "game/game.h"
 
 int main(){
-    std::cout << "Hello, World!" << std::endl;
+    Game* chessGame = new Game();
+    
+    delete chessGame;
     return 0;
 }
