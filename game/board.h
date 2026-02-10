@@ -2,12 +2,15 @@
 
 #include <string>
 #include <iostream>
+#include <vector>
+
+#include "../pieces/Piece.h"
 
 class Board {
     public:
         Board(std::string);
         ~Board() {
-            std::cout << "Board destroyed, resources cleaned up." << std::endl;
+            std::cout << "Board dead" << std::endl;
         }
 
         void initializeBoard();
@@ -22,4 +25,6 @@ class Board {
         std::string fenEnPassant;
         std::string fenHalfMove;
         std::string fenFullMove;
+
+        std::vector<Piece*> pieces;
 };

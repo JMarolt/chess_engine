@@ -9,7 +9,7 @@ class Game {
         Game();
         ~Game() {
             delete board;
-            std::cout << "Game destroyed, resources cleaned up." << std::endl;
+            std::cout << "Game dead" << std::endl;
         }
 
         void run();
