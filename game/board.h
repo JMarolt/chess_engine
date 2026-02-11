@@ -3,8 +3,7 @@
 #include <string>
 #include <iostream>
 #include <vector>
-
-#include "../pieces/Piece.h"
+#include <cstdint>
 
 class Board {
     public:
@@ -26,5 +25,5 @@ class Board {
         std::string fenHalfMove;
         std::string fenFullMove;
 
-        std::vector<Piece*> pieces;
+        std::vector<uint8_t> bitboard;
 };

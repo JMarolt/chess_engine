@@ -1,7 +1,9 @@
 #include <iostream>
+#include <vector>
+#include <cstdint>
 #include "board.h"
 
-Board::Board(std::string initialFEN) : fen(initialFEN) {
+Board::Board(std::string initialFEN) : fen(initialFEN), bitboard(64, 0) {
     initializeBoard();
 }
 
